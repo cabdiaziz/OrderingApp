@@ -15,7 +15,7 @@ export default function Navbar() {
         <ul className="md:inline-flex">
           <NavbarItem title="home" url="/" />
           <NavbarItem title="orders" url="/orders" />
-          <NavbarItem title="services" url="/services" />
+          <NavbarItem title="new order" url="/orders/new" />
         </ul>
       </nav>
     </div>
