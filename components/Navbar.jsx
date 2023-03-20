@@ -1,7 +1,23 @@
+import Link from "next/link";
+function NavbarItem({ url, title }) {
+  return (
+    <li className="mx-2 md: hover:underline hover:text-white">
+      <Link href={url}>{title}</Link>
+    </li>
+  );
+}
+
 export default function Navbar() {
   return (
-    <h1 className="text-3xl bg-sky-300 p-4 font-bold pl-32 capitalize">
-      service ordering app
-    </h1>
+    <div className="flex md:flex-row flex-col justify-between text-3xl font-medium rounded-lg capitalize bg-sky-300 p-4">
+      <h1 className=" md:pl-32 pb-4">service ordering app</h1>
+      <nav className="">
+        <ul className="md:inline-flex">
+          <NavbarItem title="home" url="/" />
+          <NavbarItem title="orders" url="/orders" />
+          <NavbarItem title="services" url="/services" />
+        </ul>
+      </nav>
+    </div>
   );
 }
