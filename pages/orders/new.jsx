@@ -1,3 +1,4 @@
+import NewOrderForm from "@/components/orders/NewOrderForm";
 export default function NewOrder() {
-  return <h1>new order route page</h1>;
+  return <NewOrderForm />;
 }
