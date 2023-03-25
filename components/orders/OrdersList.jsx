@@ -2,7 +2,7 @@ import OrdersItem from "./OrdersItem";
 export default function OrdersList(props) {
   const { orders } = props;
   return (
-    <ul className="flex flex-col min-h-screen justify-center items-center bg-slate-100 -mt-6">
+    <ul className="flex flex-col min-h-screen justify-center items-center bg-slate-100 ">
       {orders.map((order) => (
         <OrdersItem
           key={order.id}
