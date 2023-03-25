@@ -19,7 +19,6 @@ export default function Orders() {
   ];
   return (
     <div>
-      <Link href="/">Back Home</Link>
       <OrdersList orders={data} />
     </div>
   );

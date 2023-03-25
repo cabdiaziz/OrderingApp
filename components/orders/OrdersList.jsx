@@ -1,7 +1,6 @@
 import OrdersItem from "./OrdersItem";
 export default function OrdersList(props) {
   const { orders } = props;
-  console.log("Data==", orders);
   return (
     <ul className="flex flex-col min-h-screen justify-center items-center bg-slate-100 -mt-6">
       {orders.map((order) => (
