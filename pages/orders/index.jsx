@@ -1,4 +1,3 @@
-import Link from "next/link";
 import OrdersList from "@/components/orders/OrdersList";
 export default function Orders() {
   const data = [
@@ -19,7 +18,6 @@ export default function Orders() {
   ];
   return (
     <div>
-      <Link href="/">Back Home</Link>
       <OrdersList orders={data} />
     </div>
   );
