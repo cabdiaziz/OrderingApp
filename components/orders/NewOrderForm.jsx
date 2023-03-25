@@ -1,64 +1,44 @@
 export default function NewOrderForm() {
   return (
-    <form className="container mx-auto bg-gray-100 text-center">
+    <form className="container mx-auto text-center">
       <h1 className="pt-16 font-medium text-3xl capitalize">Add New Order</h1>
-      <div className="grid grid-cols-2 grid-rows-6 min-h-screen pt-24 mx-80">
-        <div className="">
-          <label className="block mb-2 -ml-72 text-base font-medium text-gray-900">
-            Full Name
+      <div className="grid grid-cols-2 gap-x-12 gap-y-12 pt-24 mx-80">
+        <div>
+          <label className="mr-[19rem] text-base font-medium">
+            Service Name
           </label>
           <input
-            className="w-96 p-2.5 bg-gray-50 border border-gray-300 text-gray-900 text-sm shadow-md rounded-lg"
             type="text"
-            placeholder="Full Name"
-          />
-        </div>
-        <div className="">
-          <label className="mb-2 -ml-64 block text-base font-medium text-gray-900">
-            Phone Number
-          </label>
-          <input
-            className="w-96 p-2.5 bg-gray-50 border border-gray-300 text-gray-900 text-sm shadow-md rounded-lg"
-            type="text"
-            placeholder="Phone Number"
-          />
-        </div>
-        <div className="">
-          <label className="block mb-2 -ml-72 text-base font-medium text-gray-900">
-            Service
-          </label>
-          <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg shadow-md w-96 p-3">
-            <option selected>Choose a service</option>
-            <option value="someOption">Some option</option>
-            <option value="otherOption">Other option</option>
-          </select>
-        </div>
-        <div className="">
-          <label className="block mb-2 -ml-80 text-base font-medium text-gray-900">
-            Date
-          </label>
-          <input
-            className="w-96 pl-3 p-2.5 bg-gray-50 border border-gray-300 text-gray-900 text-sm shadow-md rounded-lg"
-            type="Date"
+            placeholder="order name"
+            className="block w-full px-3 py-1.5 h-12 mt-2 border-0 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 "
           />
         </div>
         <div>
-          <label class="block mb-2 -ml-72 text-sm font-medium text-gray-900">
+          <label className="mr-[23rem] text-base font-medium ">Date</label>
+          <input
+            type="Date"
+            className="block px-3 py-1.5 w-full mt-2 h-12 border-0 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 "
+          />
+        </div>
+        <div className="col-span-2 ">
+          <label className="text-base font-medium mr-[49rem]">
             Description
           </label>
           <textarea
-            rows="4"
-            className="block p-2.5 w-96 ml-8 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300"
-            placeholder="Write description here..."
-          ></textarea>
+            type="text"
+            placeholder="Description"
+            className="w-full h-32 px-3 py-1.5  mt-2 border-0 rounded-md shadow-sm ring-1 ring-inset ring-gray-300 "
+          />
         </div>
       </div>
-      {/* <button
-        type="button"
-        className="bg-red-400  float-center rounded block -mt-80 "
-      >
-        submit
-      </button> */}
+      <div className="">
+        <button
+          type="button"
+          className="bg-gray-200 text-xl text-medium rounded-lg px-6 p-2 my-24 text-blue-700 hover:bg-green-300 hover:text-black shadow-md hover:shadow-green-200 capitalize"
+        >
+          send order
+        </button>
+      </div>
     </form>
   );
 }
