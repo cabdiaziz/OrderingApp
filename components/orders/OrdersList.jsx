@@ -16,13 +16,9 @@ export default function OrdersList(props) {
     </ul>
   );
 }
-{
-  /* every order detail has a li tag */
-}
-{
-  /*//todo list: 
-//*Feature :  
+
+/*//Todo items: 
+//*Features :  pagination
 
 //? Done : avatar, orderedName, description, date:2023-mar-10,  status, submit-button
 */
-}
