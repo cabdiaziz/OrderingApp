@@ -2,7 +2,7 @@ import OrdersItem from "./OrdersItem";
 export default function OrdersList(props) {
   const { orders } = props;
   return (
-    <ul className="flex flex-col min-h-screen justify-center items-center bg-slate-100  ">
+    <ul className="flex flex-col min-h-screen pt-12 bg-slate-100  ">
       {orders.map((order) => (
         <OrdersItem
           key={order.id}
@@ -16,12 +16,9 @@ export default function OrdersList(props) {
     </ul>
   );
 }
-{
-  /* every order detail has a li tag */
-}
-{
-  /*//todo: 
-//*Feature :  quantity: no [x], 
-//? avatar orderedServiceName description date:2023-mar-10,  status btn
+
+/*//Todo items: 
+//*Features :  pagination
+
+//? Done : avatar, orderedName, description, date:2023-mar-10,  status, submit-button
 */
-}
